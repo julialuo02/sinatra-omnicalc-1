@@ -1,0 +1,9 @@
+<h1>Result</h1>
+<p>Based on the information provided:</p>
+<ul>
+  <li>APR: <%= (params[:apr].to_f / 100).to_fs(:percentage, precision: 2) %></li>
+  <li>Years Remaining: <%= params[:years] %></li>
+  <li>Present Value: <%= params[:present_value].to_f.to_fs(:currency) %></li>
+</ul>
+<p>Your monthly payment is <%= @payment %>.</p>
+<a href="/payment/new">Calculate another payment</a> | <a href="/">Go back</a>

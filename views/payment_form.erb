@@ -1,0 +1,22 @@
+<h1>Calculate Monthly Payment</h1>
+
+<form action="/payment/results">
+  <div>
+    <label for="apr">APR (Annual Percentage Rate):</label>
+    <input id="apr" type="number" name="apr" step="0.01" required>
+  </div>
+
+  <div>
+    <label for="years">Number of years remaining:</label>
+    <input id="years" type="number" name="years" required>
+  </div>
+
+  <div>
+    <label for="principal">Principal:</label>
+    <input id="principal" type="number" name="present_value" step="any" required>
+  </div>
+
+  <button>Calculate monthly payment</button>
+</form>
+
+<a href="/">Go back</a>
