@@ -1,3 +1,38 @@
-<h1>Result</h1>
-<p>A random number between <%= @min %> and <%= @max %> is <%= @random_number %>.</p>
-<a href="/random/new">Generate another random number</a> | <a href="/">Go back</a>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Square</title>
+  </head>
+  <body>
+      <h1>
+        Random Results
+      </h1>
+
+      <dl>
+        <dt>
+          Minimum
+        </dt>
+        <dd>
+          <%=@max.to_f%>
+        </dd>
+
+        <dt>
+          Maximum
+        </dt>
+        <dd>
+          <%=@min.to_f%>
+        </dd>
+
+        <dt>
+          Random Number
+        </dt>
+        <dd>
+          <%=@num%>
+        </dd>
+      </dl>
+
+      <a href="/random/new">
+        Pick another random number
+      </a>
+  </body>
+</html>
